@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+  border: none;
+  font-size: 16px;
+}
+
+html,
+body {
+  background-color: #232946;
+  color: white;
+}
+
+.filter__container {
+  background-color: #b8c1ec;
+  height: 60px;
+  padding: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.filters {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;  
+}
+
+.error {
+  width: 100%;
+  font: bolder 0.8rem Arial;
+  color: red;
+  padding-top: 3px;
+}
+
+.filtered__hotels {
+  display: flex;
+  justify-content: space-between;
+  align-items: stretch;
+  flex-wrap: wrap;
+  padding: 15px;
+}
