@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "//alemeinardi.github.io/bookings/static/css/main.bfa96033.css",
+    "main.js": "//alemeinardi.github.io/bookings/static/js/main.28a3c9df.js",
+    "index.html": "//alemeinardi.github.io/bookings/index.html",
+    "main.bfa96033.css.map": "//alemeinardi.github.io/bookings/static/css/main.bfa96033.css.map",
+    "main.28a3c9df.js.map": "//alemeinardi.github.io/bookings/static/js/main.28a3c9df.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.bfa96033.css",
+    "static/js/main.28a3c9df.js"
+  ]
+}
