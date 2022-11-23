@@ -11,6 +11,7 @@ An application used to book hotels.
 - React
 - NodeJS
 - Javascript
+- CSS
 - Github
 
 ## Features
