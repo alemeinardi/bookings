@@ -14,7 +14,11 @@ An application used to book hotels.
 - CSS
 - Github
 
-## Features
+## Assets 📦
+[Fontawesome]https://fontawesome.com/: icons
+[Happyhues]https://www.happyhues.co/: styles guides
+
+## Features 🔍
 
 - CSS Modules
 - Atomized components
