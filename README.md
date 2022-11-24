@@ -1,6 +1,6 @@
 # Bookings 🏨
 
-An application used to book hotels.
+A simple application to book hotels.
 
 ## Visit the application 🌐
 
