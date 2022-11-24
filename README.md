@@ -16,11 +16,11 @@ An application used to book hotels.
 
 ## Assets 📦
 
-[Fontawesome](https://fontawesome.com/): icons
+[Fontawesome](https://fontawesome.com/): Icons
 
-[Happyhues](https://www.happyhues.co/): styles guides
+[Happyhues](https://www.happyhues.co/): Styles guides
 
-[Online convert](https://image.online-convert.com/convert-to-ico) An app convert image to ico
+[Online convert](https://image.online-convert.com/convert-to-ico): An app convert image to ico
 
 ## Features 🔍
 
