@@ -5,6 +5,7 @@ A simple application to book hotels.
 ## Visit the application 🌐
 
 [Bookings](https://alemeinardi.github.io/bookings/)
+
 Hosted on Github Pages.
 
 ## Technologies 🔧
