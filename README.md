@@ -26,6 +26,7 @@ A simple application to book hotels.
 
 - CSS Modules
 - Atomized components
+- Static data
 
 ## Autor ✒️
 @Alejandra Meinardi
