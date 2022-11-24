@@ -32,7 +32,7 @@ function HotelCard({ hotel }) {
           <div className={styles.icon__card}>
             <FontAwesomeIcon icon={faCalendar} />
           </div>
-          <span>Desde&nbsp;{new Date(hotel.availabilityFrom).toLocaleDateString('es-AR', dateOptions )}
+          <span>Desde&nbsp;el&nbsp;{new Date(hotel.availabilityFrom).toLocaleDateString('es-AR', dateOptions )}
           &nbsp;hasta el&nbsp;{new Date(hotel.availabilityTo).toLocaleDateString('es-AR', dateOptions )}
           </span>
         </div>
