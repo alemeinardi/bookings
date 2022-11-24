@@ -20,7 +20,7 @@ An application used to book hotels.
 
 [Happyhues](https://www.happyhues.co/): Styles guides
 
-[Online convert](https://image.online-convert.com/convert-to-ico): An app convert image to ico
+[Online convert](https://image.online-convert.com/convert-to-ico): An application to convert images into icons.
 
 ## Features 🔍
 
