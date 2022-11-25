@@ -26,6 +26,7 @@ Hosted on Github Pages.
 
 ## Features 🔍
 
+- Reponsive Design
 - CSS Modules
 - Atomized components
 - Static data
