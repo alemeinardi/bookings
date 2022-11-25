@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "//alemeinardi.github.io/bookings/static/css/main.bfa96033.css",
-    "main.js": "//alemeinardi.github.io/bookings/static/js/main.20ebf500.js",
-    "index.html": "//alemeinardi.github.io/bookings/index.html",
-    "main.bfa96033.css.map": "//alemeinardi.github.io/bookings/static/css/main.bfa96033.css.map",
-    "main.20ebf500.js.map": "//alemeinardi.github.io/bookings/static/js/main.20ebf500.js.map"
+    "main.css": "/bookings/static/css/main.90ef72a3.css",
+    "main.js": "/bookings/static/js/main.0b7fa4ab.js",
+    "index.html": "/bookings/index.html",
+    "main.90ef72a3.css.map": "/bookings/static/css/main.90ef72a3.css.map",
+    "main.0b7fa4ab.js.map": "/bookings/static/js/main.0b7fa4ab.js.map"
   },
   "entrypoints": [
-    "static/css/main.bfa96033.css",
-    "static/js/main.20ebf500.js"
+    "static/css/main.90ef72a3.css",
+    "static/js/main.0b7fa4ab.js"
   ]
 }
