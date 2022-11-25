@@ -2,7 +2,7 @@
 
 A simple application to book hotels.
 
-## Visit the application 🌐
+## Web App's link 🌐
 
 [Bookings](https://alemeinardi.github.io/bookings/)
 
