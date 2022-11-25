@@ -6,6 +6,8 @@ A simple application to book hotels.
 
 [Bookings](https://alemeinardi.github.io/bookings/)
 
+Hosted on Github Pages.
+
 ## Technologies 🔧
 
 - React
