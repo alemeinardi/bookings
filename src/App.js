@@ -133,7 +133,7 @@ function App() {
           value="LIMPIAR" 
           handleClick={Initialize} />
         </div>
-        <div className="error"> { hasError ? <p>La fecha de inicio de la reserva no puede ser mayor a la fecha de egreso</p> : ""}</div>
+        <div className="error"> { hasError ? <p>La fecha de inicio debe ser menor a la de egreso</p> : ""}</div>
       </div>
       <div className="filtered__hotels">
         {filteredHotels.map((hotel) => <HotelCard key={hotel.slug} hotel={hotel} />)}

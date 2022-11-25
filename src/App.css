@@ -12,6 +12,7 @@ html,
 body {
   background-color: #232946;
   color: white;
+  min-width: 412px;
 }
 
 .filter__container {
@@ -28,12 +29,14 @@ body {
   width: 100%;
   display: flex;
   justify-content: space-between;
-  align-items: center;  
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 .error {
   width: 100%;
-  font: bolder 0.8rem Arial;
+  font-weight: bolder;
+  font-size: 0.6rem;
   color: red;
   padding-top: 3px;
 }
@@ -44,4 +47,16 @@ body {
   align-items: stretch;
   flex-wrap: wrap;
   padding: 15px;
+}
+
+@media (max-width: 584px) {
+  .filter__container {
+    height: 120px;
+  }
+}
+  
+@media screen and (min-width: 585px) and (max-width:1110px) {
+  .filter__container {
+    height: 90px;
+  }
 }
