@@ -8,6 +8,8 @@ A simple application to book hotels.
 
 Hosted on Github Pages.
 
+Visit the site with your personal computer or with your mobile device
+
 ## Technologies 🔧
 
 - React
