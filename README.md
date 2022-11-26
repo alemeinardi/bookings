@@ -29,7 +29,7 @@ Visit the site with your personal computer or with your mobile device
 ## Features 🔍
 
 - Reponsive Design
-- CSS Modules
+- CSS Modules React
 - Atomized components
 - Static data
 
