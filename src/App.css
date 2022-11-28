@@ -15,7 +15,7 @@ body {
   min-width: 403px;
 }
 
-.filter__container {
+nav {
   background-color: #b8c1ec;
   height: 60px;
   padding: 15px;
@@ -41,7 +41,7 @@ body {
   padding-top: 3px;
 }
 
-.filtered__hotels {
+main {
   display: flex;
   justify-content: space-between;
   align-items: stretch;
@@ -50,13 +50,13 @@ body {
 }
 
 @media (max-width: 584px) {
-  .filter__container {
+  nav {
     height: 120px;
   }
 }
   
 @media screen and (min-width: 585px) and (max-width:1110px) {
-  .filter__container {
+  nav {
     height: 90px;
   }
 }

@@ -98,7 +98,7 @@ function App() {
   return (
     <div className="App">
       <Header overview={overview}/>
-      <div className="filter__container">
+      <nav>
         <div className="filters">
         <Filter 
           type="date"
@@ -134,10 +134,10 @@ function App() {
           handleClick={Initialize} />
         </div>
         <div className="error"> { hasError ? <p>La fecha de inicio debe ser menor a la de egreso</p> : ""}</div>
-      </div>
-      <div className="filtered__hotels">
+      </nav>
+      <main>
         {filteredHotels.map((hotel) => <HotelCard key={hotel.slug} hotel={hotel} />)}
-      </div>
+      </main>
     </div>
   );
 }
