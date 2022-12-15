@@ -6,6 +6,7 @@ import HotelCard from "./components/hotelCard";
 import { useState } from "react";
 /* Data */
 import hotels from './data/data.js';
+import { countries, sizes, prices } from "./data/filterOptions";
 /* Functions */
 import { DateToString, StringToDate } from "./functions/dateConverter";
 
@@ -15,27 +16,6 @@ function App() {
   const [ country, setCountry ] = useState("");
   const [ price, setPrice ] = useState("");
   const [ size, setSize ] = useState("");
-
-  // Filter options
-  const countries = [
-    { id: "",  name: "Todos los países"},
-    { id: "AR",  name: "Argentina"},
-    { id: "BR",  name: "Brasil"},
-    { id: "CH",  name: "Chile"},
-    { id: "UR",  name: "Uruguay"} ]
-
-  const prices = [
-    { id: "",  name: "Cualquier precio"},
-    { id: "1",  name: "Económicos"},
-    { id: "2",  name: "Confort"},
-    { id: "3",  name: "Lujosos"},
-    { id: "4",  name: "Magníficos"} ]
-
-  const sizes = [
-    { id: "",  name: "Todos los tamaños"},
-    { id: "P",  name: "Pequeños"},
-    { id: "M",  name: "Medianos"},
-    { id: "G",  name: "Grandes"} ]
 
   // Initialize
   function Initialize() {
