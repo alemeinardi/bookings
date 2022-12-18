@@ -1,9 +1,10 @@
 import "./App.css";
+import { useState } from "react";
+/* Components */
 import Header from "./components/header";
 import Filter from "./components/filter";
 import Button from "./components/button";
 import HotelCard from "./components/hotelCard";
-import { useState } from "react";
 /* Data */
 import hotels from './data/data.js';
 import { countries, sizes, prices } from "./data/filterOptions";
@@ -25,6 +26,15 @@ function App() {
     setPrice("");
     setSize("");
   }
+
+  // Filters: component instances
+  const filters = [
+    { id: "f1", type: "date", icon: "from", value: from, handleClick: setFrom },
+    { id: "f2", type: "date", icon: "to", value: to, handleClick: setTo },
+    { id: "f3", type: "combo", icon: "globe", value: country, handleClick: setCountry, options: countries },
+    { id: "f4", type: "combo", icon: "dollar", value: price, handleClick: setPrice, options: prices },
+    { id: "f5", type: "combo", icon: "bed", value: size, handleClick: setSize, options: sizes }
+  ]
 
   // Filter
   const dateFrom = StringToDate(from);
@@ -80,38 +90,19 @@ function App() {
       <Header overview={overview}/>
       <nav>
         <div className="filters">
-        <Filter 
-          type="date"
-          icon="from"
-          value={from}
-          handleClick={setFrom} />
-        <Filter 
-          type="date"
-          icon="to"
-          value={to}
-          handleClick={setTo} />
-        <Filter 
-          type="combo"
-          icon="globe"
-          value={country}
-          handleClick={setCountry}
-          options={countries} />
-        <Filter 
-          type="combo"
-          icon="dollar"
-          value={price}
-          handleClick={setPrice}
-          options={prices} />
-        <Filter 
-          type="combo"
-          icon="bed"
-          value={size}
-          handleClick={setSize}
-          options={sizes} />          
-        <Button
-          icon="trash"
-          value="LIMPIAR" 
-          handleClick={Initialize} />
+          
+          { filters.map((filter) => 
+          { return <Filter 
+              type={filter.type}
+              icon={filter.icon} 
+              value={filter.from}
+              handleClick={filter.handleClick}
+              options={filter.options}/>}
+          )}
+          <Button
+            icon="trash"
+            value="LIMPIAR" 
+            handleClick={Initialize} />
         </div>
         <div className="error"> { hasError ? <p>La fecha de inicio debe ser menor a la de egreso</p> : ""}</div>
       </nav>
