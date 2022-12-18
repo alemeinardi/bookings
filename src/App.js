@@ -4,6 +4,7 @@ import { useState } from "react";
 import Header from "./components/header";
 import Filter from "./components/filter";
 import Button from "./components/button";
+import Main from "./components/main";
 import HotelCard from "./components/hotelCard";
 /* Data */
 import hotels from './data/data.js';
@@ -90,15 +91,14 @@ function App() {
       <Header overview={overview}/>
       <nav>
         <div className="filters">
-          
           { filters.map((filter) => 
-          { return <Filter 
-              type={filter.type}
-              icon={filter.icon} 
-              value={filter.from}
-              handleClick={filter.handleClick}
-              options={filter.options}/>}
-          )}
+            { return <Filter 
+                type={filter.type}
+                icon={filter.icon} 
+                value={filter.from}
+                handleClick={filter.handleClick}
+                options={filter.options}/>}
+            )}
           <Button
             icon="trash"
             value="LIMPIAR" 
@@ -106,9 +106,7 @@ function App() {
         </div>
         <div className="error"> { hasError ? <p>La fecha de inicio debe ser menor a la de egreso</p> : ""}</div>
       </nav>
-      <main>
-        {filteredHotels.map((hotel) => <HotelCard key={hotel.slug} hotel={hotel} />)}
-      </main>
+      <Main filteredHotels={filteredHotels} />
     </div>
   );
 }
