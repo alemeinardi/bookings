@@ -7,15 +7,15 @@ function Header ({ overview }) {
   <header>
     <h1>Hoteles</h1>
 
-    <p>{!overview.from && !overview.to ? `En cualquier fecha.` : overview.from ? `Desde el ${overview.from}` : ``}</p>
+    <p>{!overview.fromString && !overview.toString ? `En cualquier fecha.` : overview.fromString ? `Desde el ${overview.fromString}` : ``}</p>
 
-    <p>{overview.to ? `Hasta el ${overview.to}` : ``}</p>
+    <p>{overview.toString ? `Hasta el ${overview.toString}` : ``}</p>
 
-    <p>{!overview.country ? `En cualquier país.` : `En ${overview.country}`}</p>
+    <p>{!overview.countryName ? `En cualquier país.` : `En ${overview.countryName}`}</p>
 
-    <p>{!overview.price ? `De cualquier precio.` : `${overview.price}`}</p>
+    <p>{!overview.priceName ? `De cualquier precio.` : `${overview.priceName}`}</p>
 
-    <p>{!overview.size ? `De cualquier tamaño.` : `${overview.size}`}</p>
+    <p>{!overview.sizeName ? `De cualquier tamaño.` : `${overview.sizeName}`}</p>
 
     <p>Existen {overview.quantity} hoteles que cumplen los filtros seleccionados.</p>
   </header>);

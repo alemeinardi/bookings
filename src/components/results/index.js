@@ -1,6 +1,6 @@
 import HotelCard from "../hotelCard";
 
-function Main({filteredHotels}) {
+function Results({filteredHotels}) {
   return (
     <main>
     {filteredHotels.map((hotel) => 
@@ -10,4 +10,4 @@ function Main({filteredHotels}) {
   </main>)
 }
 
-export default Main;
+export default Results;

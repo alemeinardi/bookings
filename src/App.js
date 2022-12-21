@@ -4,8 +4,7 @@ import { useState } from "react";
 import Header from "./components/header";
 import Filter from "./components/filter";
 import Button from "./components/button";
-import Main from "./components/main";
-import HotelCard from "./components/hotelCard";
+import Results from "./components/results";
 /* Data */
 import hotels from './data/data.js';
 import { countries, sizes, prices } from "./data/filterOptions";
@@ -28,20 +27,21 @@ function App() {
     setSize("");
   }
 
-  // Filters: component instances
+  // Filters: every possible selection
   const filters = [
-    { id: "f1", type: "date", icon: "from", value: from, handleClick: setFrom },
-    { id: "f2", type: "date", icon: "to", value: to, handleClick: setTo },
-    { id: "f3", type: "combo", icon: "globe", value: country, handleClick: setCountry, options: countries },
-    { id: "f4", type: "combo", icon: "dollar", value: price, handleClick: setPrice, options: prices },
-    { id: "f5", type: "combo", icon: "bed", value: size, handleClick: setSize, options: sizes }
+    { id: "f1", type: "date",  icon: "from",   value: from,    handleClick: setFrom },
+    { id: "f2", type: "date",  icon: "to",     value: to,      handleClick: setTo },
+    { id: "f3", type: "combo", icon: "globe",  value: country, handleClick: setCountry, options: countries },
+    { id: "f4", type: "combo", icon: "dollar", value: price,   handleClick: setPrice,   options: prices },
+    { id: "f5", type: "combo", icon: "bed",    value: size,    handleClick: setSize,    options: sizes }
   ]
 
-  // Filter
+  // Filters: each user selection
   const dateFrom = StringToDate(from);
   const dateTo = StringToDate(to);
   const countryName = countries.find(c => c.id === country).name;
   const priceName = prices.find(p => p.id === price).name;
+  const sizeName = sizes.find(p => p.id === size).name;
 
   let hasError = false;
 
@@ -78,11 +78,11 @@ function App() {
 
   // Filter overview
   const overview = {
-    from: DateToString(dateFrom),
-    to: DateToString(dateTo),
-    country: country && countryName,
-    price: price && priceName,
-    size: size && sizes.find(p => p.id === size).name,
+    fromString: DateToString(dateFrom),
+    toString: DateToString(dateTo),
+    countryName: country && countryName,
+    priceName: price && priceName,
+    sizeName: size && sizeName,
     quantity: filteredHotels.length
   }  
 
@@ -92,10 +92,11 @@ function App() {
       <nav>
         <div className="filters">
           { filters.map((filter) => 
-            { return <Filter 
+            { return <Filter
+                key={filter.id}
                 type={filter.type}
                 icon={filter.icon} 
-                value={filter.from}
+                value={filter.value}
                 handleClick={filter.handleClick}
                 options={filter.options}/>}
             )}
@@ -106,7 +107,7 @@ function App() {
         </div>
         <div className="error"> { hasError ? <p>La fecha de inicio debe ser menor a la de egreso</p> : ""}</div>
       </nav>
-      <Main filteredHotels={filteredHotels} />
+      <Results filteredHotels={filteredHotels} />
     </div>
   );
 }
