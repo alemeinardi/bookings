@@ -12,6 +12,7 @@ import { countries, sizes, prices } from "./data/filterOptions";
 import { DateToString, StringToDate } from "./functions/dateConverter";
 
 function App() {
+  /* Filters */
   const [ from, setFrom ] = useState("");
   const [ to, setTo ] = useState("");
   const [ country, setCountry ] = useState("");
@@ -43,7 +44,7 @@ function App() {
   const priceName = prices.find(p => p.id === price).name;
   const sizeName = sizes.find(p => p.id === size).name;
 
-  let hasError = false;
+  var hasError = false;
 
   const filter = () => { 
 
